@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -58,4 +57,4 @@ def results():
     return render_template("results.html", results=crawled_data)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
